@@ -161,30 +161,36 @@ def register():
   f.close()
 
   
-def login(id,password):
+def login():
   f = open("bank.txt","r")
   e = eval(f.read())
-  if id in e:
-    if password == e[id][-2]:
-      print("Login successfull")
-      while(1):
-        print("1.Balance 2.Deposit 3.Withdraw 4.Exit")
-        a = input("Enter your choice:")
-        a.upper()
-        if a == 'BALANCE' or a == '1':
-          balance(id)
-        elif a == 'DEPOSIT' or a == '2':
-          deposit(id)
-        elif a == 'WITHDRAW' or a == '3':
-          withdraw(id)
-        elif a == 'EXIT' or a == '4':
-          break
+  while(1):
+    id = input("Enter your id:")
+    if id.digit():
+      if id in e:
+        pwd = input("Enter your password:") 
+        if password == e[id][-2]:
+          print("Login successfull")
+          while(1):
+            print("1.Balance 2.Deposit 3.Withdraw 4.Exit")
+            a = input("Enter your choice:")
+            a.upper()
+            if a == 'BALANCE' or a == '1':
+              balance(id)
+            elif a == 'DEPOSIT' or a == '2':
+              deposit(id)
+            elif a == 'WITHDRAW' or a == '3':
+              withdraw(id)
+            elif a == 'EXIT' or a == '4':
+              break
+            else:
+              print("Invalid option")
         else:
-          print("Invalid option")
+          print("Invalid password")
+      else:
+        print("Invalid user id..... If you are new kindly signup... or check with different user credentials")
     else:
-      print("Invalid password")
-  else:
-    print("Invalid user id..... If you are new kindly signup... or check with different user credentials")
+      print("Id should be only in number")
   f.close()
 
 
@@ -260,13 +266,11 @@ while(1):
   a = input("Enter your choice:")
   a.upper()
   if a == 'LOGIN' or a == '1':
-    id = int(input("Enter your id:"))
-    pwd = input("Enter your password:")
-    login(id,pwd)
+    login()
   elif a == 'REGISTER' or a == '2':
     register()
   elif a == 'EXIT' or a == '3':
     break
   else:
     print("Invalid option")
-
+    
