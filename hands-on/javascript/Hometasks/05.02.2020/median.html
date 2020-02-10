@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>median</title>
+    </head>
+    <body>
+        Median in a sorted array if length are same
+        <script>
+            var median = (function(array1,array2){
+            var ar1 = array1;
+            var ar2 = array2;
+            var median = [];
+            if (ar1.length == ar2.length){
+                var ar = ar1.concat(ar2)
+                if(ar.length%2 == 0){
+                    l = ar.length/2;
+                    l = (Math.floor(l))
+                    med = (ar[l]+ar[l-1])/2
+                    median.push(med);
+                }
+                else{
+                    l = ar.length/2;
+                    l = (Math.floor(l))
+                    med = ar[l]
+                    median.push(med);
+                }
+            }
+            return median;
+            })
+            medi = median([1,2,4],[9,11,15]);
+            console.log("Median in given array: "+medi)          
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Odd Numbers</title>
+    </head>
+    <body>
+        <div>Odd number is given array using arrow function</div>
+        <script>
+            var a1 = array => {
+            var ar = array;
+            const oddNum = [];
+            for(i=0;i<ar.length;i++){
+                if (ar[i]%2 != 0){
+                    oddNum.push(ar[i])
+                }
+            }
+            console.log("The given array: "+ar)
+            return oddNum;
+            }
+            var odd = a1([1,2,3,4,5,6,7,8,9]);
+            console.log("The Odd Numbers in given array: "+odd)
+        </script>
+    </body>
+</html>

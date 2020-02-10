@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>remove Duplicates</title>
+    </head>
+    <body>
+        <div>To remove duplicate from the given array</div>
+        <script>
+            var dupl = function(array){
+                var arr = array;
+                const unique = [];
+                for (i = arr.length - 1; i >= 0; i--)
+                    if (unique.indexOf(arr[i]) === -1) {
+                    unique.push(arr[i])
+                }
+                return unique;
+            }
+            var duplicate = dupl([121,2,3,4,4,6,7,6,121])
+            duplicate.sort(function(a,b){return a-b});
+            console.log("The unique value in array: "+duplicate)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>prime Numbers</title>
+    </head>
+    <body>
+        <div>Prime Numbers in an array using arrow function</div>
+        <script>
+            var prime = array => {
+            var ar = array;
+            var primNum = [];
+            for(i=0;i<ar.length;i++){
+                var flag=true;
+                for(j=2;j<ar[i];j++){
+                    if(ar[i]%j == 0){
+                        flag = false;
+                        break;
+                    }
+                    }
+                    if(flag){
+                       primNum.push(ar[i])
+                    }
+                }
+            console.log("The given array: "+ar)
+            return primNum;
+            }
+            primeNum = prime([3,4,5,6,7,8,9,10,11,12,13]);
+            console.log("Prime number in array: "+primeNum)
+        </script>
+    </body>
+</html>

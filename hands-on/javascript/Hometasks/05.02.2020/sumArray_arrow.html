@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sumArray_arrow</title>
+    </head>
+    <body>
+        <div>To sum the array using arrow function</div>
+        <script>
+            var sum1 = a => {
+            var ar = a;
+            var s=0;
+            for(i=0;i<ar.length;i++){
+                s = s+ar[i];
+            }
+            console.log('The given array: '+ar);
+            return s;
+            }
+            var s = sum1([1,3,5,7,9])
+            console.log("Sum of given array: "+s)
+        </script>
+
+    </body>
+</html>

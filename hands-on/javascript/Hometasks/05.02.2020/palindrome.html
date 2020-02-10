@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>palimdrome</title>
+    </head>
+    <body>
+        <div>Palindrome in an array</div>
+        <script>
+            var pali = (function(array){
+            var ar = array;
+            var palind = [];
+            for(i=0;i<ar.length;i++){
+                var string = ar[i];
+                var l = string.length
+                var rev = ""
+                for(j=l-1;j>=0;j--){
+                    rev = rev+string.charAt(j);
+                }
+                if(ar[i] == rev){
+                    palind.push(ar[i])
+                }
+            }
+            return palind;
+            })
+            palim = pali(['hih','rama','sas']);
+            console.log("Palindrome in given array: "+palim)
+
+
+            palin =(function(array){
+            var ar = array;
+            var palind = [];
+            for(i=0;i<ar.length;i++){
+                var string = ar[i];
+                var l = string.length
+                var rev = ""
+                for(j=l-1;j>=0;j--){
+                    rev = rev+string.charAt(j);
+                }
+                if(ar[i] == rev){
+                    palind.push(ar[i])
+                }
+            }
+            return palind;
+            })(['rajar','sesesas','ramar']);
+            console.log("Palindrome in given array: "+palin)
+
+            
+        </script>
+    </body>
+</html>

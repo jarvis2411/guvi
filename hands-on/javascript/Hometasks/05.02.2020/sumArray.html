@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sum of all Numbers</title>
+    </head>
+    <body>
+        <div>Sum of all Numbers in an arary</div>
+        <script>
+            var sum = (function(array){
+            var ar = array;
+            var s=0;
+            for(i=0;i<ar.length;i++){
+                s = s+ar[i];
+            }
+            console.log("The given array: "+ar);
+            return s;
+            })
+            var s =sum([1,3,5,7,9]);
+            console.log("Sum of given array: "+s)
+            
+            var s1= (function(array){
+            var ar = array;
+            var sum=0;
+            for(i=0;i<ar.length;i++){
+                sum = sum+ar[i];
+            }
+            console.log("The given array: "+ar);
+            return sum;
+            })([12,31,51,72,90]);
+            console.log("Sum of given array: "+s1)
+        </script>
+    </body>
+</html>

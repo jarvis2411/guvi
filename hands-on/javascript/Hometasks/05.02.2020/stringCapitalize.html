@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>StringTitle capitalize</title>
+    </head>
+    <body>
+        <div>StringTitle capitalize in an array</div>
+        <script>
+            var a1 = function(array){
+            var ar = array;
+            for(i=0;i<ar.length;i++){
+                var string = ar[i];
+                var capitalize = (string.charAt(0).toUpperCase())+(string.slice(1).toLowerCase());
+                ar[i] = capitalize;
+            }
+            console.log(ar)
+            }
+            a1(['hi','raj','hello']);
+
+
+            (function(array){
+            var ar = array;
+            for(i=0;i<ar.length;i++){
+                var string = ar[i];
+                var capitalize = (string.charAt(0).toUpperCase())+(string.slice(1).toLowerCase());
+                ar[i] = capitalize;
+            }
+            console.log(ar)
+            })(['hi','raj','hello']);
+            
+        </script>
+    </body>
+</html>
