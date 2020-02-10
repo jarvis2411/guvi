@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>removeProperty</title>
+    </head>
+    <body>
+        To remove property of the given key.
+        <script>
+            function removeProperty(obj,key){
+                delete obj.key
+                console.log(obj)
+            }
+            var car = {
+                type:"Fiat"
+            }
+           removeProperty(car,"type") //positive test case
+        </script>   
+    </body>
+    </html>

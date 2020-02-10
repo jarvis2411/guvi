@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>addProperty</title>
+    </head>
+    <body>
+        To add property of the given key.
+        <script>
+            function addProperty(obj,key){
+                obj[key]="true"
+                console.log(obj)
+            }
+            var car = {
+                type:"Fiat"
+            }
+           addProperty(car,"type") //positive test case
+        </script>   
+    </body>
+    </html>
