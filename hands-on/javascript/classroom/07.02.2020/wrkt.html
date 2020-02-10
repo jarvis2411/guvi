@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Workout</title>
+    </head>
+    <body>
+        <script>
+            // var d = 20;
+            // function f1(){
+            //     console.log(a,d);
+            //     var a = 10;
+            //     b = 10;
+            //     let c =10;
+            //     console.log(a,b,c,d);
+            // }
+            // f1()
+            // console.log(b,d);
+
+//             var bar = 1,
+//     foo = {};
+
+// foo: {
+//     bar: 2;
+//     baz: ++bar;
+// };
+// console.log(foo.baz + foo.bar + bar);
+// console.log((true + false) > 2 + true)
+// function bar() {
+//     return foo;
+//     foo = 10;
+//     function foo() {}
+//     var foo = '11';
+// }
+// console.log(bar())
+// console.log(new String("This is a string") instanceof String)
+
+// var myArr = ['foo', 'bar', 'baz'];
+// myArr[2];
+// console.log('2' in myArr);
+
+// var x = 0;
+// function foo() {
+//     x++;
+//     this.x = x;
+//     return foo;
+// }
+// var bar = new new foo;
+// console.log(bar.x);
+
+// console.log(new Array(5).toString())
+
+
+// function foo(a, b) {
+//     arguments[1] = 2;
+//     alert(b);
+// }
+// foo(1);
+
+
+var x = 3;
+
+var foo = {
+    x: 2,
+    baz: {
+        x: 1,
+        bar: function() {
+            return this.x;
+        }
+    }
+}
+
+var go = foo.baz.bar;
+
+alert(go());
+alert(foo.baz.bar());
+        </script>
+    </body>
+</html>
