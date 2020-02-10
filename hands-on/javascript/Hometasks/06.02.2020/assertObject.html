@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>assertObject</title>
+    </head>
+    <body>
+        <div>To assert the json object</div>
+        <script>
+            var expected = {foo: 5, bar: 6};
+            var actual = {foo: 5, bar: 7};
+            function assertobjectEqual(actual,expected,testName){
+                s1 = JSON.stringify(actual);
+                s2 = JSON.stringify(expected);
+                if (s1 == s2){
+                    console.log("PASSED")
+                }else{
+                    console.log("FAILED")
+                }
+            }
+            assertobjectEqual(actual,expected,'detects that two objects are equal')
+        </script>
+    </body>
+</html>

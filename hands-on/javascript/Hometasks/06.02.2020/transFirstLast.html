@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>transform</title>
+    </head>
+    <body>
+        <div>To transfrom first and last item in a array to json object</div>
+        <div id="values"></div>
+        <script>
+            var array = ["Guvi","I","Am","Geek"];
+            var my_object={};
+            function transformFirstAndLast(ar){
+                var ar1 = ar;
+                l = (ar1.length)-1
+                my_object[ar1[0]]=ar1[l];
+                console.log(my_object);
+            return my_object;
+            }
+            var l = transformFirstAndLast(array);
+            document.getElementById('values').innerHTML += l;
+        </script>
+    </body>
+</html>

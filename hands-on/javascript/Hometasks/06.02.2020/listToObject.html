@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>list to json</title>
+    </head>
+    <body>
+        <div>To convert lsit to json object</div>
+        <div id="values"></div>
+        <script>
+            var array = [["make", "Ford"], ["model", "Mustang"], ["year", 1964]];
+            var my_object={};
+            function convertlistToObj(ar){
+                var ar1 = ar;
+                var list = [];
+            for(i in ar){
+                var list = ar[i];
+                var key = list[0];
+                my_object[key]=list[1];
+                }
+                console.log(my_object);
+            return my_object;
+            }
+            var l = convertlistToObj(array);
+            document.getElementById('values').innerHTML += l;
+        </script>
+    </body>
+</html>

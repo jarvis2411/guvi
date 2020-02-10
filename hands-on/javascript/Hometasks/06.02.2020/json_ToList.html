@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>json to list</title>
+    </head>
+    <body>
+        <div>To convert json object to a list</div>
+        <div id="values"></div>
+        <script>
+            var my_object = {name: "ISRO", age: 35, role : "scientist"};
+            var x,y;
+            var list=[];
+            function convertObjToList(json){
+                var list1 = [];
+            for(x in json){
+                list1.push(x);
+                list1.push(json[x]);
+                list.push(list1);
+                list1 = [];
+            }
+                console.log(list)
+                return list;
+            }
+            var l = convertObjToList(my_object);
+            document.getElementById('values').innerHTML += l;
+        </script>
+    </body>
+</html>

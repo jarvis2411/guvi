@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>transform Geek Data</title>
+    </head>
+    <body>
+        <div>To transfrom first and last item in a array to json object</div>
+        <div id="values"></div>
+        <script>
+            var array = [[["firstName", "Vasanth"], ["lastName", "Raja"], ["age", 24], ["role", "JSWizard"]], 
+            [["firstName", "Sri"], ["lastName", "Devi"], ["age", 28], ["role", "Coder"]]];
+            var my_array=[];
+            function transformFirstAndLast(ar){
+                var my_object={};
+                var ar1 = ar;
+                for(i in ar1){
+                    var list = ar[i];
+                    for(j in list){
+                        var list1 = list[j];
+                        my_object[list1[0]] = list1[1];
+                    }
+                    my_array.push(my_object);
+                    my_object={};
+                }
+                console.log(my_array)
+                return my_array;
+                }
+            var l = transformFirstAndLast(array);
+            document.getElementById('values').innerHTML += l;
+        </script>
+    </body>
+</html>

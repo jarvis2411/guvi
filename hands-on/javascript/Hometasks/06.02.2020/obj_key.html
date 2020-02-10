@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>json object key</title>
+    </head>
+    <body>
+        <div>To print json object key</div>
+        <div id="values"></div>
+        <script>
+            var my_object = {name: "Rajinikanth", age: 33, hasPets : false};
+            var x;
+            function printAllKeys(json){
+            for(x in json){
+                document.getElementById('values').innerHTML += x+" ";
+            }
+            }
+            printAllKeys(my_object);
+        </script>
+    </body>
+</html>

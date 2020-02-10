@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>json object values</title>
+    </head>
+    <body>
+        <div>To access json object values</div>
+        <div id="values"></div>
+        <script>
+            var my_object = {name: "Rajinikanth", age: 33, hasPets : false};
+            var x;
+            function printAllValues(json){
+            for(x in json){
+                document.getElementById('values').innerHTML += json[x]+" ";
+            }
+            }
+            printAllValues(my_object);
+        </script>
+    </body>
+</html>
