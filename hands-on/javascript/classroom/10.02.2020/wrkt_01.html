@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Workouts</title>
+    </head>
+    <body>
+        <script>
+            // function myFun(a,b,...manyArgs){
+            //     console.log("a",a);
+            //     console.log("b",b);
+            //     console.log("manyArgs",manyArgs);
+            //     console.log(arguments);
+            // }
+            // myFun('one','two','three','four','five');
+
+            class over{
+                constructor(score,wicket){
+                    this.score = score;
+                    this.wicket = wicket;
+                }
+
+                print()
+                {
+                    Console.log(this.score);
+                }
+            }
+            var over1 = new over(10,20);
+            over1.score=20;
+            over1.print();
+            console.log(over1.score,over1.wicket)
+        </script>
+    </body>
+</html>
