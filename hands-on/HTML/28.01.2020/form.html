@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration form</title>
+        <style>
+            div{
+                padding: 10px;
+                color: blue;
+                margin: auto;
+            }
+            div.href:hover{
+                border: 5px;
+                color: blue;
+            }
+            .txtbox{
+                padding-right: 10px;
+                border: 2px solid green;
+            }
+            .radbtn{
+                padding-bottom:15px ;
+            }
+            .submit{
+                border: 3px double blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h3><ins>Student Quiz Registration Details</ins></h3>
+        <form actions="/actions_page.php" method="push">
+            <div>Name:
+            <input type="text" name="firstname" placeholder="NAME" class="txtbox"></div>
+            <div>e-mail:
+            <input type="text" name="email" placeholder="e-mail id" 
+            pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" class="txtbox"></div>
+            <div>Password:
+            <input type="password" name="passwd" placeholder="Password" 
+            minlength="8" maxlength="20" class="txtbox"></div>
+            <div>Gender:
+            <input type="radio" name="gender" value="MALE" class="radbtn"><span>MALE</span>
+            <input type="radio" name="gender" value="FEMALE" class="radbtn"><span>FEMALE</span></div>
+            <div>AGE:
+            <select>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+            </select></div>
+            <div><input type="submit" class="submit"></div>
+        </form>
+        <div class="href"><a href="health tips.html">Click here to know Health tips</a></div>
+        <div class="href"><a href="quiz.html">Click here to go to Quiz</a></div>
+    </body>
+</html>
