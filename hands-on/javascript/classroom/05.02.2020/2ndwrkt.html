@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Workouts javascript
+        </title>
+    </head>
+    <body>
+        <script>
+            function foo(){console.log("hello");}
+            foo();
+
+            var a1 = function foo(){console.log("hello");}
+            a1();
+
+            var b1 = function(){console.log("hello");}
+            b1();
+
+            (function(){console.log("My number");})();
+
+            (Number=function(num=3){console.log("My number"+num);})();
+            
+            Number(4);
+
+            var f = function(){console.log("hello");};
+            var g = function(a){a();};
+            g(f)
+
+            var x = function test(){console.log("hello")}
+
+            var y = () => console.log("hello")
+
+            x();
+            y();
+
+            var sum = (a,b) => a+b; console.log(sum(2,4))
+
+            var sqrt = a => a*a; console.log(sqrt(2))
+
+            var srt = a =>{
+                return a*a;
+            }
+            console.log(srt(2))
+
+            var cars = ['BMW','AUDI','BENZ','RR','JAGUAR']
+            cars.forEach(function(item,index,array){
+                console.log("Brand name is "+array);
+                console.log("car"+item+"position"+index)
+            })
+
+            for(i=0;i<cars.length;i++){
+                if(cars[i] == "BENZ"){
+                    console.log(cars[i]);
+                }
+                if(cars[i] == "RR"){
+                    console.log(cars[i]);
+                }
+            }
+        </script>
+    </body>
+</html>
