@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cricket</title>
+        <script src="test1.js"></script>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body id="body">
+        <script>
+            
+    var bod = document.getElementById('body');
+    var maindiv = document.createElement('div');
+    maindiv.setAttribute('class','container-fluid');
+    bod.appendChild(maindiv);
+    var button1 = document.createElement('button');
+    button1.setAttribute('id','team1')
+    button1.setAttribute('content','Team1 - Bat')
+    button1.setAttribute('type','button')
+    button1.setAttribute('class','btn btn-warning')
+    button1.setAttribute('onclick','setscore1()')
+    button1.setAttribute('content', 'test content');
+    button1.innerHTML = 'Team1 - Bat';
+    maindiv.appendChild(button1)
+    var button2 = document.createElement('button');
+    button2.setAttribute('id','team2')
+    button2.setAttribute('content','Team1 - Bat')
+    button2.setAttribute('type','button')
+    button2.setAttribute('class','btn btn-warning')
+    button2.setAttribute('onclick','setscore2()')
+    button2.setAttribute('content', 'test content');
+    button2.innerHTML = 'Team2 - Bat';
+    maindiv.appendChild(button2)
+    var button3 = document.createElement('button');
+    button3.setAttribute('id','summary')
+    button3.setAttribute('content','Team1 - Bat')
+    button3.setAttribute('type','button')
+    button3.setAttribute('class','btn btn-warning')
+    button3.setAttribute('onclick','summary()')
+    button3.setAttribute('content', 'test content');
+    button3.innerHTML = 'Match Summary';
+    maindiv.appendChild(button3)
+    document.getElementById("team2").disabled = true;
+    document.getElementById("summary").disabled = true;
+        </script>
+
+        
+    </body>
+</html>
