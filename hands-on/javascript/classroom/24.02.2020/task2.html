@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form validation</title>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+  
+    </head>
+    <body >
+        
+        <div class="container-fluid">
+            <div class = 'row'>
+                <div class = "col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="Name">Name</label>
+                            <input type="name" class="form-control" id="name" placeholder="Enter name"  required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="name" class="form-control" id="email1" placeholder="Enter email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Retype Password:</label>
+                            <input type="password" class="form-control" id="repwd" placeholder="Re-type password" required>
+                        </div>
+                        <div class = "form-group">
+                            <label for = 'country'>Country</label>
+                            <select name="country" class="custom-select mb-3" id = "count">
+                                
+                                <option value="India" selected>India</option>
+                                <option value="US">US</option>
+                                <option value="UK">UK</option>
+                            </select>
+                        </div>
+                        <div class = "form-group">
+                            <label for = 'state'>State</label>
+                            <select name="state" class="custom-select mb-3" id ="stat">
+                                <option value="TamilNadu" selected>TamilNadu</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for = 'custom-radio'>Gender:</label>
+                            <div class="custom-control custom-radio ">
+                              <input type="radio" class="custom-control-input" id="male" value="male" name="radio" checked>
+                              <label class="custom-control-label" for="male">Male</label>
+                            </div>
+                            <div class="custom-control custom-radio ">
+                              <input type="radio" class="custom-control-input" id="female" value="female" name="radio">
+                              <label class="custom-control-label" for="female">Female</label>
+                            </div>
+                            <div class="custom-control custom-radio ">
+                              <input type="radio" class="custom-control-input" id="other" value="other" name="radio">
+                              <label class="custom-control-label" for="other">Other</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for = 'custom-radio'>Marital Status:</label>
+                            <div class="custom-control custom-radio ">
+                              <input type="radio" class="custom-control-input" id="married" value="married" name="radio1">
+                              <label class="custom-control-label" for="married">Married</label>
+                            </div>
+                            <div class="custom-control custom-radio ">
+                              <input type="radio" class="custom-control-input" id="unmarried" value="unmarried" name="radio1" checked>
+                              <label class="custom-control-label" for="unmarried">Unmarried</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for = 'custom-checkbox'>Favorite Places:</label>
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="kodaikanal" value="kodaikanal">
+                                <label class="custom-control-label" for="kodaikanal">Kodaikanal</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="shimla" value="shimla" checked>
+                                <label class="custom-control-label" for="shimla">Shimla</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="paris"value="paris">
+                                <label class="custom-control-label" for="paris">Paris</label>
+                            </div>  
+                        </div>
+                        <button type="submit" class="btn btn-primary" onsubmit=oo(ev)>Submit</button>
+                    </form>
+                </div>
+                <div class = "col-md-6">
+                
+                </div>
+        </div>
+        </div>
+        <script src="task2.js"></script>
+    </body>
+</html>

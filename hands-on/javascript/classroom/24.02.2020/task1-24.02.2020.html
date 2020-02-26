@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task1</title>
+    </head>
+    <body>
+        <script>
+            for(i = 1;i < 101;i++)
+            {
+                var div = document.createElement('div')
+                div.innerHTML = i
+                if(i%2 != 0)
+                    div.setAttribute('style','color:blue')
+                else
+                    div.setAttribute('style','color:red')
+                document.body.appendChild(div)
+            }
+        </script>
+    </body>
+</html>
